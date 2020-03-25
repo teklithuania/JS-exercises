@@ -190,21 +190,40 @@
 // fizzBuzz();
 
 // console.log('----------------');
-function fibonacciGenerator (n) {
-    var output = [];
-    if (n === 1) {
-        output.push(0);
-    } else if (n === 2) {
-        output.push(0, 1);
-    } else if (n <= 0) {
-        console.log('Wrong number. You can use only numbers > 0.');
-    } else {
-        output = [0, 1];
-        for (let i = 2; i < n; i++) {
-            let sum1 = output[output.length - 2] + output[output.length - 1];
-            output.push(sum1);
-        }
-    }
-    return console.log(output);    
+// function fibonacciGenerator (n) {
+    //     var output = [];
+    //     if (n === 1) {
+        //         output.push(0);
+        //     } else if (n === 2) {
+            //         output.push(0, 1);
+            //     } else if (n <= 0) {
+                //         console.log('Wrong number. You can use only numbers > 0.');
+                //     } else {
+                    //         output = [0, 1];
+                    //         for (let i = 2; i < n; i++) {
+                        //             let sum1 = output[output.length - 2] + output[output.length - 1];
+                        //             output.push(sum1);
+                        //         }
+                        //     }
+                        //     return console.log(output);    
+                        // }
+                        // fibonacciGenerator(10);
+
+// console.log('----------------');
+
+function add(num1, num2) {
+    return num1 + num2;
 }
-fibonacciGenerator(10);
+function multiply(num1, num2) {
+    return num1 * num2;
+}
+function devide(num1, num2) {
+    return num1 / num2;
+}
+function substract(num1, num2) {
+    return num1 - num2;
+}
+
+function calculator(num1, operator, num2) {
+    return operator(num1, num2);
+}
