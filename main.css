@@ -1,0 +1,38 @@
+.container {
+    display: inline-block;
+    float: left;
+    width: 600px;
+    height: 600px;
+    margin: 50px calc(50% - 300px);
+    /* border: 10px solid rgb(9, 148, 167); */
+    background-color: aquamarine;
+    position: relative;
+}
+.first {
+    display: inline-block;
+    float: left;
+    width: 200px;
+    height: 200px;
+    background-color: aqua;
+    position: absolute;
+}
+.second {
+    display: inline-block;
+    float: left;
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    position: absolute;
+    top: 200px;
+    left: 200px;
+}
+.third {
+    display: inline-block;
+    float: right;
+    width: 200px;
+    height: 200px;
+    background-color: yellow;
+    position: absolute;
+    top: 400px;
+    right: 0;
+}
